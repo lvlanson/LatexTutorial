@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
 
 \title{\LaTeX\ Dokumentation}
 \author{Thomas Davies}
@@ -55,6 +57,148 @@
 	Eine Überschrift ersten Grades aber ohne Nummerierung erhält man mit:\\¸
 	\verb|\section*{Überschrift ohne Nummerierung mit*}|
 	
+	\section{Kommando vs. Umgebung}
+	In \LaTeX gibt es Kommandos und Umgebungen.
+	\subsection{Kommando}
+	Ein Kommando wird vom Kompiler ganz ausgeführt.
+	Typische Kommandos sind z.B.:
+	\verb|\document[text]{class}|, um die Art des Dokumentes anzulegen
+	\verb|\userpackage[text]{package}|, um Pakete einzubinden oder
+	\verb+\verb|text|+, dabei kann die Pipe z.B. auch durch + ersetzt werden.
+	
+	\subsection{Umgebung}
+	Eine Umgebung ist ein geschlossener Bereich. Das bedeutet, dass Variablen, Schriftarten etc. in diesem Bereich definiert werden können und auch nur für dieen gelten.
+	\begin{verbatim}
+	\begin{*environment-name*}
+	
+	content...
+	\end{*environment-name*}
+	\end{verbatim}
+	
+	Dabei gilt \verb|*environment-name*| als Platzhalter für die eigentliche Umgebung. Typische Umgebungen sind: verbatim, figure und tabular.
+	
+	\subsection{Verbatim}
+	Innerhalb der Verbatim-Umgebung wird \LaTeX-Code durch den Kompiler ignoriert.
+	Beispiel:
+	\begin{verbatim*}
+	
+	\begin{verbatim}
+	content...
+	\end{verbatim}
+
+	\end{verbatim*}
+	
+	produziert \verb|\LaTeX|
+	
+	\subsubsection{Aufzählungen}
+	In \LaTeX gibt es zwei Möglichkeiten der Aufzählung itemize und enumerate.
+	Dabei produziert itemize Bulletpoiints und Enumerate eine Aufzählung.
+	
+	\begin{verbatim}
+	\begin{itemize}
+		\item Punkt 1
+			\begin{enumerate}
+			\item Zahl 1
+		\end{enumerate}
+	\end{itemize}
+	\end{verbatim}
+	\begin{itemize}
+		\item Punkt 1
+		\begin{enumerate}
+			\item Zahl 1
+		\end{enumerate}
+	\end{itemize}
+	Die Aufzählung kann wie oben zu sehen bis zum vierten Grad geschachtelt werden.
+	
+	\subsection{Abbildungen}
+	Abbildungen können mittels des Paketes graphicx und der figure Umgebung eingebunden werden.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.1]{/home/lvlanson/Documents/latextutorial/NoMeGusta.jpg}
+		\caption{schoenes Bild von XYZ \url{}https://i.kym-cdn.com/entries/icons/original/000/002/252/NoMeGusta.jpg}
+	\end{figure}
+	
+	Hierbei steht centering für die zentrierte Ausrichtung des Bildes. Includegraphics lädt externe Bilder. Diese Bilder können mittels der Optionen scale oder auch width, height in der Größe angepasst werden.
+	Die Bilderunterschrift entsteht durch caption.\\
+	
+	\subsection{Tabellen}
+	Tabellen können mittels Quellcode:
+	\begin{verbatim}
+	
+	\begin{tabular}{|l|c|r|}
+	\hline
+	links & mitte & rechts \\
+	\hline
+	1 & 4 & 2 \\
+	\hline
+	2 & & 5 \\
+	\hline
+	2 & 6 & 7 \\
+	\hline
+	\end{tabular}
+	
+	\end{verbatim}
+	
+	oder mittels Tabellen-Assistenten im TexStudio oder über Webseiten-Tools wie z.B. \url{https://tablesgenerator.com} erstellt werden. Dies resultiert in der folgenden Tabelle:
+		
+	\begin{table}[!h]
+		\caption{Tabelle 1}\label{tab:tabelle 1}
+	\end{table}
+	
+	\begin{tabular}{|l|c|r|p{1.5cm}|}
+		\hline
+		links & mitte & rechts & feste Breite\\
+		\hline
+		1 & 4 & 2 & Ein langer Text, der umgebrochen werden soll\\
+		\hline
+		2 & Dieser Text wird nicht umgebrochen & 5 & \\
+		\hline
+		2 & 6 & 7 & \\
+		\hline
+	\end{tabular}
+\\
+
+Wobei l (left) für eine spaltenweise Ausrichtung links, r (right) für rechts und c (center) für eine zentrierte spaltenweise Ausrichtung steht. Die Option \verb|p{1.5cm}| legt fest, dass diese Spalte genau 1,5cm breit ist - breiterer Text wird hierbei umgebrochen.
+Die Pipe steht in diesem Zusammenhang für die vertikale Linie zwischen den einzelnen Spalten. \verb|\hline| erzeugt eine horizontale Linie vor oder nach einer Zeile. Das kaufmännische und (\&) trennt die einzelnen Spalten innerhalb einer Zeile und \verb|\\|
+trennt die Zeilen.
+
+\subsubsection{Position für Tabellen und Abbildungen}
+
+Tabellen und Abbildungen sind Umgebungen, die innerhalb LaTeX nicht umgebrochen werden dürfen. LaTeX wird versuchen diese an Positionen abzubilden, die diese Regel nicht verletzen. Um dennoch Einfluss auf die Position nehmen zu können, können neben dem Container \verb|[POSITIONSPARAMETER]| angegeben werden. Diese sind:
+
+\begin{tabular}{|c|c|}
+	\hline 
+	Positionsparameter & Eigenschaft \\ 
+	\hline 
+	h & platziere die Tabelle hier \\ 
+	\hline 
+	t & platziere die Tabelle oben (top) \\ 
+	\hline 
+	b & Tabelle unten platzieren (bottom) \\ 
+	\hline 
+	p & platziere die Tabelle auf eigene Seite (page) \\ 
+	\hline 
+	! & Regel für gute Position \\
+	\hline
+\end{tabular} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
 
 
