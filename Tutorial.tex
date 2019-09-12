@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+
+\title{\LaTeX\ Dokumentation}
+\author{Thomas Davies}
+\setlength{\parindent}{0cm}
+
+
+\begin{document}
+	\maketitle
+	\section{Aufbau eines \LaTeX-Dokuments:}
+	\begin{verbatim}
+	\documentclass{article}
+	\usepackage[ngerman]{babel} % Lädt das Sprachpaket
+	\usepackage[utf8]{inputenc} % Lädt die utf8 Kodierung
+	
+	\title{\LaTeX\ Dokumentation} % Setzt den Titel des Dokuments
+	\author{Thomas Davies} % Setzt den Urheber des Dokuments
+	
+	\setlength{\parindent}{0cm} % Vermeidet, dass Paragraphen eingerückt werden
+	
+	\begin{document} % Umgebung des Dokuments
+	\maketitle % Erzeugt eine Teilüberschrift
+		
+	\end{document} % Beendet die Dokumentumgebung
+	\end{verbatim}
+	
+	\section{Gliederung eines \LaTeX~Dokuments}
+	Eine Gliederung ersten Grades erreicht man mit:\\
+	\verb|\section{Gliederung ersten Grades}|
+	
+	Eine Gliederung zweiten Grades erreicht man mit:\\
+	\verb|\subsection{Gliederung zweiten Grades}|
+	
+	Eine Gliederung dritten Grades erreicht man mit:\\
+	\verb|\subsubsection{Gliederung dritten Grades}|
+	
+	Eine Gliederung vierten Grades erreicht man mit:\\
+	\verb|\paragraph{Gliederung vierten Grades}|
+	
+	Eine Überschrift ersten Grades aber ohne Nummerierung erhält man mit:\\¸
+	\verb|\section*{Überschrift ohne Nummerierung mit*}|
+	
+\end{document}
+
+
+
