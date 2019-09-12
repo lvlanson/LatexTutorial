@@ -11,6 +11,13 @@
 
 \begin{document}
 	\maketitle
+	
+	\tableofcontents
+	
+	\listoffigures
+	
+	\listoftables
+	
 	\section{Aufbau eines \LaTeX-Dokuments:}
 	\begin{verbatim}
 	\documentclass{article}
@@ -56,6 +63,9 @@
 	
 	Eine Überschrift ersten Grades aber ohne Nummerierung erhält man mit:\\¸
 	\verb|\section*{Überschrift ohne Nummerierung mit*}|
+	
+	\section{Verzeichnisse}
+	Ein Inhaltsverzeichnis erstellt man mit \verb|\tableofcontents|. Neben dem Inhaltsverzeichnis gibt es auch das Abbildungsverzeichnis, dieses erstellt man mittels \verb|\listoffigures|, und das Tabellenverzeichnis mit \verb|\listoftables|.
 	
 	\section{Kommando vs. Umgebung}
 	In \LaTeX gibt es Kommandos und Umgebungen.
@@ -189,6 +199,17 @@ Die einfachste Form einer Referenzierung kann dann mittels \verb|\ref{label}| er
 Eine bessere Möglichkeit bietet dann z.B. \verb|\autoref{text}|. Damit können Referenzen in der Form \autoref{sec:referenzierung} erzeugt werden. Es geht aber auch, den Namen der Section zu referenzieren. Dies macht man mit \verb|\nameref{label}| und sieht so aus
 \nameref{sec:referenzierung}.
 
+\section{Zitierungen}
+Zunächst muss eine Datei *.bib angelegt werden. In dieser Datei werden die Quellen abgelegt.
+
+Damit im Dokument auf diese Quelle verwiesen werden kann muss zunächst die Datei *.bib bekannt gemacht werden. Dies geschieht mit dem kommando \verb|\bibliography(dateiname)|. Daneben muss das Format der Bibliographie festgelegt werden. Dazu gibt es verschiedene Optionen wie z.B. alpha (weitere sind hier zu finden \url{https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Bibliography_styles}).
+
+ 
+
+Zitieren kann man nun mit dem Kommando \verb|\cite{key}|\cite{davies1992weg}
+
+\bibliographystyle{alpha}
+\bibliography{bibliographie}
 
 
 

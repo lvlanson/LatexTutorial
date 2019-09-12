@@ -1,12 +1,14 @@
 \BOOKMARK [1][-]{section.1}{Aufbau eines LaTeX-Dokuments:}{}% 1
 \BOOKMARK [1][-]{section.2}{Titelseite}{}% 2
 \BOOKMARK [1][-]{section.3}{Gliederung eines LaTeX Dokuments}{}% 3
-\BOOKMARK [1][-]{section.4}{Kommando vs. Umgebung}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Kommando}{section.4}% 5
-\BOOKMARK [2][-]{subsection.4.2}{Umgebung}{section.4}% 6
-\BOOKMARK [2][-]{subsection.4.3}{Verbatim}{section.4}% 7
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Aufz\344hlungen}{subsection.4.3}% 8
-\BOOKMARK [2][-]{subsection.4.4}{Abbildungen}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.5}{Tabellen}{section.4}% 10
-\BOOKMARK [3][-]{subsubsection.4.5.1}{Position f\374r Tabellen und Abbildungen}{subsection.4.5}% 11
-\BOOKMARK [1][-]{section.5}{Referenzierung}{}% 12
+\BOOKMARK [1][-]{section.4}{Verzeichnisse}{}% 4
+\BOOKMARK [1][-]{section.5}{Kommando vs. Umgebung}{}% 5
+\BOOKMARK [2][-]{subsection.5.1}{Kommando}{section.5}% 6
+\BOOKMARK [2][-]{subsection.5.2}{Umgebung}{section.5}% 7
+\BOOKMARK [2][-]{subsection.5.3}{Verbatim}{section.5}% 8
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Aufz\344hlungen}{subsection.5.3}% 9
+\BOOKMARK [2][-]{subsection.5.4}{Abbildungen}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.5}{Tabellen}{section.5}% 11
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Position f\374r Tabellen und Abbildungen}{subsection.5.5}% 12
+\BOOKMARK [1][-]{section.6}{Referenzierung}{}% 13
+\BOOKMARK [1][-]{section.7}{Zitierungen}{}% 14

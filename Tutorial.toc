@@ -1,0 +1,15 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Aufbau eines \LaTeX -Dokuments:}{2}{section.1}% 
+\contentsline {section}{\numberline {2}Titelseite}{2}{section.2}% 
+\contentsline {section}{\numberline {3}Gliederung eines \LaTeX ~Dokuments}{2}{section.3}% 
+\contentsline {section}{\numberline {4}Verzeichnisse}{3}{section.4}% 
+\contentsline {section}{\numberline {5}Kommando vs. Umgebung}{3}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Kommando}{3}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Umgebung}{3}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Verbatim}{3}{subsection.5.3}% 
+\contentsline {subsubsection}{\numberline {5.3.1}Aufz\IeC {\"a}hlungen}{4}{subsubsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.4}Abbildungen}{4}{subsection.5.4}% 
+\contentsline {subsection}{\numberline {5.5}Tabellen}{5}{subsection.5.5}% 
+\contentsline {subsubsection}{\numberline {5.5.1}Position f\IeC {\"u}r Tabellen und Abbildungen}{5}{subsubsection.5.5.1}% 
+\contentsline {section}{\numberline {6}Referenzierung}{6}{section.6}% 
+\contentsline {section}{\numberline {7}Zitierungen}{6}{section.7}% 
