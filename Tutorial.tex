@@ -183,6 +183,12 @@ Tabellen und Abbildungen sind Umgebungen, die innerhalb LaTeX nicht umgebrochen 
 	\hline
 \end{tabular} 
 
+\section{Referenzierung}\label{sec:referenzierung}
+Um referenzieren zu können, muss zunächst ein Label(\verb|\label(key)|) erstellt werden. Dieses Label kann an die Überschriften, in die Gleichungen, Tabellen oder Abbildungen etc. eingefügt werden.
+Die einfachste Form einer Referenzierung kann dann mittels \verb|\ref{label}| erfolgen und sieht so aus \ref{sec:referenzierung}. Dabei ist es notwendig den Typ des Referenzobjekts anzugeben. 
+Eine bessere Möglichkeit bietet dann z.B. \verb|\autoref{text}|. Damit können Referenzen in der Form \autoref{sec:referenzierung} erzeugt werden. Es geht aber auch, den Namen der Section zu referenzieren. Dies macht man mit \verb|\nameref{label}| und sieht so aus
+\nameref{sec:referenzierung}.
+
 
 
 
